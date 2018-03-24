@@ -1,0 +1,9 @@
+CREATE DATABASE job_application_system;
+
+CREATE TABLE users(user_id int NOT NULL primary key AUTO_INCREMENT,
+firstname VARCHAR(50) NOT NULL,
+lastname VARCHAR(50) NOT NULL,
+email VARCHAR(50) NOT NULL,
+username VARCHAR(50) NOT NULL UNIQUE,
+password VARCHAR(255) NOT NULL,
+created_at DATETIME DEFAULT CURRENT_TIMESTAMP);
